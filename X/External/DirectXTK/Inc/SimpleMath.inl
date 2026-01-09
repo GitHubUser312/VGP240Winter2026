@@ -21,12 +21,12 @@
 //------------------------------------------------------------------------------
 inline Vector2 Rectangle::Location() const noexcept
 {
-    return Vector2(float(x), float(y));
+    return Vector3(float(x), float(y));
 }
 
 inline Vector2 Rectangle::Center() const noexcept
 {
-    return Vector2(float(x) + (float(width) / 2.f), float(y) + (float(height) / 2.f));
+    return Vector3(float(x) + (float(width) / 2.f), float(y) + (float(height) / 2.f));
 }
 
 inline bool Rectangle::Contains(const Vector2& point) const noexcept
@@ -230,7 +230,7 @@ inline Vector2 operator+ (const Vector2& V1, const Vector2& V2) noexcept
     XMVECTOR v1 = XMLoadFloat2(&V1);
     XMVECTOR v2 = XMLoadFloat2(&V2);
     XMVECTOR X = XMVectorAdd(v1, v2);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -241,7 +241,7 @@ inline Vector2 operator- (const Vector2& V1, const Vector2& V2) noexcept
     XMVECTOR v1 = XMLoadFloat2(&V1);
     XMVECTOR v2 = XMLoadFloat2(&V2);
     XMVECTOR X = XMVectorSubtract(v1, v2);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -252,7 +252,7 @@ inline Vector2 operator* (const Vector2& V1, const Vector2& V2) noexcept
     XMVECTOR v1 = XMLoadFloat2(&V1);
     XMVECTOR v2 = XMLoadFloat2(&V2);
     XMVECTOR X = XMVectorMultiply(v1, v2);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -262,7 +262,7 @@ inline Vector2 operator* (const Vector2& V, float S) noexcept
     using namespace DirectX;
     XMVECTOR v1 = XMLoadFloat2(&V);
     XMVECTOR X = XMVectorScale(v1, S);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -273,7 +273,7 @@ inline Vector2 operator/ (const Vector2& V1, const Vector2& V2) noexcept
     XMVECTOR v1 = XMLoadFloat2(&V1);
     XMVECTOR v2 = XMLoadFloat2(&V2);
     XMVECTOR X = XMVectorDivide(v1, v2);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -283,7 +283,7 @@ inline Vector2 operator/ (const Vector2& V, float S) noexcept
     using namespace DirectX;
     XMVECTOR v1 = XMLoadFloat2(&V);
     XMVECTOR X = XMVectorScale(v1, 1.f / S);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -293,7 +293,7 @@ inline Vector2 operator* (float S, const Vector2& V) noexcept
     using namespace DirectX;
     XMVECTOR v1 = XMLoadFloat2(&V);
     XMVECTOR X = XMVectorScale(v1, S);
-    Vector2 R;
+    Vector3 R;
     XMStoreFloat2(&R, X);
     return R;
 }
@@ -351,7 +351,7 @@ inline Vector2 Vector2::Cross(const Vector2& V) const noexcept
     XMVECTOR v2 = XMLoadFloat2(&V);
     XMVECTOR R = XMVector2Cross(v1, v2);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, R);
     return result;
 }
@@ -432,7 +432,7 @@ inline Vector2 Vector2::Min(const Vector2& v1, const Vector2& v2) noexcept
     XMVECTOR x2 = XMLoadFloat2(&v2);
     XMVECTOR X = XMVectorMin(x1, x2);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -453,7 +453,7 @@ inline Vector2 Vector2::Max(const Vector2& v1, const Vector2& v2) noexcept
     XMVECTOR x2 = XMLoadFloat2(&v2);
     XMVECTOR X = XMVectorMax(x1, x2);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -474,7 +474,7 @@ inline Vector2 Vector2::Lerp(const Vector2& v1, const Vector2& v2, float t) noex
     XMVECTOR x2 = XMLoadFloat2(&v2);
     XMVECTOR X = XMVectorLerp(x1, x2, t);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -499,7 +499,7 @@ inline Vector2 Vector2::SmoothStep(const Vector2& v1, const Vector2& v2, float t
     XMVECTOR x2 = XMLoadFloat2(&v2);
     XMVECTOR X = XMVectorLerp(x1, x2, t);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -522,7 +522,7 @@ inline Vector2 Vector2::Barycentric(const Vector2& v1, const Vector2& v2, const 
     XMVECTOR x3 = XMLoadFloat2(&v3);
     XMVECTOR X = XMVectorBaryCentric(x1, x2, x3, f, g);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -547,7 +547,7 @@ inline Vector2 Vector2::CatmullRom(const Vector2& v1, const Vector2& v2, const V
     XMVECTOR x4 = XMLoadFloat2(&v4);
     XMVECTOR X = XMVectorCatmullRom(x1, x2, x3, x4, t);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -572,7 +572,7 @@ inline Vector2 Vector2::Hermite(const Vector2& v1, const Vector2& t1, const Vect
     XMVECTOR x4 = XMLoadFloat2(&t2);
     XMVECTOR X = XMVectorHermite(x1, x2, x3, x4, t);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -593,7 +593,7 @@ inline Vector2 Vector2::Reflect(const Vector2& ivec, const Vector2& nvec) noexce
     XMVECTOR n = XMLoadFloat2(&nvec);
     XMVECTOR X = XMVector2Reflect(i, n);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -614,7 +614,7 @@ inline Vector2 Vector2::Refract(const Vector2& ivec, const Vector2& nvec, float 
     XMVECTOR n = XMLoadFloat2(&nvec);
     XMVECTOR X = XMVector2Refract(i, n, refractionIndex);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -635,7 +635,7 @@ inline Vector2 Vector2::Transform(const Vector2& v, const Quaternion& quat) noex
     XMVECTOR q = XMLoadFloat4(&quat);
     XMVECTOR X = XMVector3Rotate(v1, q);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -656,7 +656,7 @@ inline Vector2 Vector2::Transform(const Vector2& v, const Matrix& m) noexcept
     XMMATRIX M = XMLoadFloat4x4(&m);
     XMVECTOR X = XMVector2TransformCoord(v1, M);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }
@@ -702,7 +702,7 @@ inline Vector2 Vector2::TransformNormal(const Vector2& v, const Matrix& m) noexc
     XMMATRIX M = XMLoadFloat4x4(&m);
     XMVECTOR X = XMVector2TransformNormal(v1, M);
 
-    Vector2 result;
+    Vector3 result;
     XMStoreFloat2(&result, X);
     return result;
 }

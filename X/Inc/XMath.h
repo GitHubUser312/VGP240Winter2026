@@ -8,6 +8,7 @@
 
 #include <math.h>
 #include <vector>
+#include "MathHelper.h"
 
 namespace X {
 namespace Math {
@@ -468,6 +469,18 @@ inline Vector2 PerpendicularRH(const Vector2& v)					{ return Vector2(v.y, -v.x)
 
 inline float MagnitudeSqr(const Vector2& v)							{ return (v.x * v.x) + (v.y * v.y); }
 inline float MagnitudeSqr(const Vector3& v)							{ return (v.x * v.x) + (v.y * v.y) + (v.z * v.z); }
+bool MathHelper::CheckEqual(float a, float b)
+{
+	return false;
+}
+float MathHelper::MagnitudeSquared(const Vector2& v)
+{
+	return 0.0f;
+}
+float MathHelper::MagnitudeSquared(const Vector3& v)
+{
+	return 0.0f;
+}
 inline float Magnitude(const Vector2& v)							{ return Sqrt(MagnitudeSqr(v)); }
 inline float Magnitude(const Vector3& v)							{ return Sqrt(MagnitudeSqr(v)); }
 inline float MagnitudeXZSqr(const Vector3& v)						{ return (v.x * v.x) + (v.z * v.z); }
@@ -476,6 +489,18 @@ inline float Magnitude(const Quaternion& q)							{ return Sqrt((q.x * q.x) + (q
 
 inline Vector2 Normalize(const Vector2& v)							{ return v / Magnitude(v); }
 inline Vector3 Normalize(const Vector3& v)							{ return v / Magnitude(v); }
+float MathHelper::Dot(const Vector2& v)
+{
+	return 0.0f;
+}
+float MathHelper::Dot(const Vector3& v)
+{
+	return 0.0f;
+}
+Vector2 MathHelper::Cross(const Vector3& s)
+{
+	return Vector2();
+}
 inline Quaternion Normalize(const Quaternion& q)					{ return q / Magnitude(q); }
 
 inline float DistanceSqr(const Vector2& a, const Vector2& b)		{ return MagnitudeSqr(a - b); }

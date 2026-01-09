@@ -1,5 +1,4 @@
 #pragma once
-
 #include "Command.h"
 
 class CmdSetColor : public Command
@@ -16,6 +15,7 @@ public:
 			"SetColor(r, g, b)\n"
 			"\n"
 			"- Sets the color using red, green, and blue. Values are from 0.0 to 1.0.";
+			"- Values are from 0.0-1.0.";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;
