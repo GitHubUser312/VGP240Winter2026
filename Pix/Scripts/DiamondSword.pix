@@ -1,0 +1,250 @@
+SetResolution(16, 16, 30, true)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(13, 1)
+
+DrawPixel(14, 1)
+SetColor(0.1176, 0.5412, 0.4627)
+
+DrawPixel(15, 1)
+SetColor(0.1176, 0.5412, 0.4627)
+
+DrawPixel(15, 2)
+SetColor(0.1176, 0.5412, 0.4627)
+
+DrawPixel(15, 3)
+SetColor(0.1176, 0.5412, 0.4627)
+
+DrawPixel(12, 2)
+SetColor(0.1176, 0.5412, 0.4627)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(13, 2)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(14, 2)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(13, 3)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(13, 3)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(14, 3)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(9, 7)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(10, 6)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(11, 5)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(12, 4)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(12, 3)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(11, 4)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(10, 5)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(9, 6)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(13, 4)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(12, 5)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(11, 6)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(10, 7)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(11, 3)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(10, 4)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(9, 5)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(14, 4)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(13, 5)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(12, 6)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(11, 7)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(10, 8)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(8, 6)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(7, 7)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(6, 8)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(6, 9)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(5, 7)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(3, 6)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(4, 6)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(3, 7)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(4, 8)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(4, 9)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(4, 7)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(5, 8)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(5, 9)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(6, 10)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(8, 7)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(7, 8)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(7, 9)
+
+SetColor(0.1725, 0.7804, 0.6667)
+DrawPixel(8, 8)
+
+SetColor(0.0549, 0.2392 0.2039)
+DrawPixel(5, 10)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(6, 11)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(7, 10)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(8, 10)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(7, 12)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(9, 8)
+
+SetColor(0.2039, 0.9216, 0.7882)
+DrawPixel(8, 9)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(9, 9)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(8, 12)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(7, 11)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(8, 11)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(9, 12)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(9, 11)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(9, 13)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(10, 12)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(10, 13)
+
+SetColor(0.4000, 0.2941, 0.1176)
+DrawPixel(5, 11)
+
+SetColor(0.5294, 0.4000, 0.1529)
+DrawPixel(4, 12)
+
+SetColor(0.2784, 0.2078, 0.0824)
+DrawPixel(3, 12)
+
+SetColor(0.2784, 0.2078, 0.0824)
+DrawPixel(4, 11)
+
+SetColor(0.2784, 0.2078, 0.0824)
+DrawPixel(5, 12)
+
+SetColor(0.2784, 0.2078, 0.0824)
+DrawPixel(4, 13)
+
+SetColor(0.4000, 0.2941, 0.1176)
+DrawPixel(3, 13)
+
+SetColor(0.1176, 0.5412, 0.4627)
+DrawPixel(2, 14)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(3, 14)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(2, 13)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 13)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 14)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 14)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 14)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 15)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(1, 15)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(2, 15)
+
+SetColor(0.0549, 0.2392, 0.2039)
+DrawPixel(3, 15)

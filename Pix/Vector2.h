@@ -20,5 +20,3 @@ struct Vector2
 	Vector2* operator*=(float s) { x *= s; y *= s; return this; };
 	Vector2* operator/=(float s) { x /= s; y /= s; return this; };
 };
-
-Vector2 a = { 10.0f };

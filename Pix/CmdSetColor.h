@@ -14,7 +14,7 @@ public:
 		return
 			"SetColor(r, g, b)\n"
 			"\n"
-			"- Sets the color using red, green, and blue. Values are from 0.0 to 1.0.";
+			"- Sets the color using red, green, and blue. Values are from 0.0 to 1.0.\n"
 			"- Values are from 0.0-1.0.";
 	}
 

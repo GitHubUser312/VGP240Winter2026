@@ -25,4 +25,6 @@ void Viewport::SetViewport(float x, float y, float width, float height)
 	mPosY = X::Math::Max(y, 0.0f);
 	mWidth = X::Math::Max(width, 0.0f);
 	mHeight = X::Math::Max(height, 0.0f);
+
+	mShowViewport = true;
 }

@@ -4,6 +4,8 @@
 //====================================================================================================
 
 #include "PixEditor.h"
+#include "Viewport.h"
+#include "Clipper.h"
 
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
@@ -11,6 +13,13 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 	X::Start("xconfig.json");
 	editor.Initialize();
+	
+	// Set viewport here
+	Viewport::Get()->SetViewport(100, 100, 400, 300);
+	Viewport::Get()->DrawViewport();
+
+	Clipper::Get()->SetClipping(true);
+
 
 	X::Run([&](float deltaTime)
 	{

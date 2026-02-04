@@ -1,5 +1,5 @@
 #include "MathHelper.h"
-#include <math.h>
+#include <cmath>
 
 bool MathHelper::CheckEqual(float a, float b)
 {
@@ -26,11 +26,11 @@ float MathHelper::Magnitude(const Vector3& v)
 
 Vector2 MathHelper::Normalize(const Vector2& v)
 {
-
+	return v / Magnitude(v);
 }
 Vector3 MathHelper::Normalize(const Vector3& v)
 {
-
+	return v / Magnitude(v);
 }
 
 float MathHelper::Dot(const Vector2& a, const Vector2& b)
@@ -49,4 +49,153 @@ Vector3 MathHelper::Cross(const Vector3& a, const Vector3& b)
 		a.z * b.x - a.x * b.z,
 		a.x * b.y - a.y * b.x
 	};
+}
+
+Vector3 MathHelper::TransformCoord(const Vector3& v, const Matrix4& m)
+{
+    const float w = ((v.x + m._14) + (v.y + m._24) + (v.z + m._34) + (1.0f + m._44));
+	const float invW = 1.0f / w;
+	return {
+		((v.x * m._11) + (v.y * m._21) + (v.z * m._31) + (1.0f * m._41)) * invW,
+		((v.x * m._12) + (v.y * m._22) + (v.z * m._32) + (1.0f * m._42)) * invW,
+		((v.x * m._13) + (v.y * m._23) + (v.z * m._33) + (1.0f * m._43))* invW
+	};
+}
+
+Vector3 MathHelper::TransformNormal(const Vector3& v, const Matrix4& m)
+{
+	return Normalize({
+		(v.x * m._11) + (v.y * m._21) + (v.z * m._31), // x
+		(v.x * m._12) + (v.y * m._22) + (v.z * m._32), // y
+		(v.x * m._13) + (v.y * m._23) + (v.z * m._33)  // z
+		});
+}
+
+Matrix4 MathHelper::Inverse(const Matrix4& m)
+{
+	const float det = Determinant(m);
+	const float invDet = 1.0f / det;
+	return Adjoint(m) * invDet;
+}
+
+Matrix4 MathHelper::Transpose(const Matrix4& m)
+{
+	// take diagonal as a line to not modify
+	// swap the values on the other side of the diagonal
+	return
+	{
+		m._11, m._21, m._31, m._41,
+		m._12, m._22, m._32, m._42,
+		m._13, m._23, m._33, m._43,
+		m._14, m._24, m._34, m._44
+	};
+}
+
+Matrix4 MathHelper::Adjoint(const Matrix4& m)
+{
+    return
+    {
+        // Row 1
+        +(m._22 * (m._33 * m._44 - m._34 * m._43)
+        - m._23 * (m._32 * m._44 - m._34 * m._42)
+        + m._24 * (m._32 * m._43 - m._33 * m._42)),
+
+        -(m._12 * (m._33 * m._44 - m._34 * m._43)
+        - m._13 * (m._32 * m._44 - m._34 * m._42)
+        + m._14 * (m._32 * m._43 - m._33 * m._42)),
+
+        +(m._12 * (m._23 * m._44 - m._24 * m._43)
+        - m._13 * (m._22 * m._44 - m._24 * m._42)
+        + m._14 * (m._22 * m._43 - m._23 * m._42)),
+
+        -(m._12 * (m._23 * m._34 - m._24 * m._33)
+        - m._13 * (m._22 * m._34 - m._24 * m._32)
+        + m._14 * (m._22 * m._33 - m._23 * m._32)),
+
+
+            // Row 2
+            -(m._21 * (m._33 * m._44 - m._34 * m._43)
+            - m._23 * (m._31 * m._44 - m._34 * m._41)
+            + m._24 * (m._31 * m._43 - m._33 * m._41)),
+
+            +(m._11 * (m._33 * m._44 - m._34 * m._43)
+            - m._13 * (m._31 * m._44 - m._34 * m._41)
+            + m._14 * (m._31 * m._43 - m._33 * m._41)),
+
+            -(m._11 * (m._23 * m._44 - m._24 * m._43)
+            - m._13 * (m._21 * m._44 - m._24 * m._41)
+            + m._14 * (m._21 * m._43 - m._23 * m._41)),
+
+            +(m._11 * (m._23 * m._34 - m._24 * m._33)
+            - m._13 * (m._21 * m._34 - m._24 * m._31)
+            + m._14 * (m._21 * m._33 - m._23 * m._31)),
+
+
+            // Row 3
+            +(m._21 * (m._32 * m._44 - m._34 * m._42)
+            - m._22 * (m._31 * m._44 - m._34 * m._41)
+            + m._24 * (m._31 * m._42 - m._32 * m._41)),
+
+            -(m._11 * (m._32 * m._44 - m._34 * m._42)
+            - m._12 * (m._31 * m._44 - m._34 * m._41)
+            + m._14 * (m._31 * m._42 - m._32 * m._41)),
+
+            +(m._11 * (m._22 * m._44 - m._24 * m._42)
+            - m._12 * (m._21 * m._44 - m._24 * m._41)
+            + m._14 * (m._21 * m._42 - m._22 * m._41)),
+
+            -(m._11 * (m._22 * m._34 - m._24 * m._32)
+            - m._12 * (m._21 * m._34 - m._24 * m._31)
+            + m._14 * (m._21 * m._32 - m._22 * m._31)),
+
+
+            // Row 4
+            -(m._21 * (m._32 * m._43 - m._33 * m._42)
+            - m._22 * (m._31 * m._43 - m._33 * m._41)
+            + m._23 * (m._31 * m._42 - m._32 * m._41)),
+
+            +(m._11 * (m._32 * m._43 - m._33 * m._42)
+            - m._12 * (m._31 * m._43 - m._33 * m._41)
+            + m._13 * (m._31 * m._42 - m._32 * m._41)),
+
+            -(m._11 * (m._22 * m._43 - m._23 * m._42)
+            - m._12 * (m._21 * m._43 - m._23 * m._41)
+            + m._13 * (m._21 * m._42 - m._22 * m._41)),
+
+            +(m._11 * (m._22 * m._33 - m._23 * m._32)
+            - m._12 * (m._21 * m._33 - m._23 * m._31)
+            + m._13 * (m._21 * m._32 - m._22 * m._31))
+    };
+}
+
+
+float MathHelper::Determinant(const Matrix4& m)
+{
+    float det = 0.0f;
+
+    det += (m._11 * (
+        m._22 * (m._33 * m._44 - (m._43 * m._34)) -
+        m._23 * (m._32 * m._44 - (m._42 * m._34)) +
+        m._24 * (m._32 * m._43 - (m._42 * m._33))
+        ));
+
+    det -= (m._12 * (
+        m._21 * (m._33 * m._44 - (m._43 * m._34)) -
+        m._23 * (m._31 * m._44 - (m._41 * m._34)) +
+        m._24 * (m._31 * m._43 - (m._41 * m._33))
+        ));
+
+    det += (m._13 * (
+        m._21 * (m._32 * m._44 - (m._42 * m._34)) -
+        m._22 * (m._31 * m._44 - (m._41 * m._34)) +
+        m._24 * (m._31 * m._42 - (m._41 * m._32))
+        ));
+
+    det -= (m._14 * (
+        m._21 * (m._32 * m._43 - (m._42 * m._33)) -
+        m._22 * (m._31 * m._43 - (m._41 * m._33)) +
+        m._23 * (m._31 * m._42 - (m._41 * m._32))
+        ));
+
+    return det;
 }

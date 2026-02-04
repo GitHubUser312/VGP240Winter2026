@@ -329,67 +329,67 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storag
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Search.h(1985,30): warning C5256: 'ABI::Windows::Storage::Search::IndexerOption': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(882,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderShareLinkState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(927,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderShareLinkState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2183,30): warning C5256: 'ABI::Windows::Storage::Provider::CachedFileOptions': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2228,30): warning C5256: 'ABI::Windows::Storage::Provider::CachedFileOptions': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2193,30): warning C5256: 'ABI::Windows::Storage::Provider::CachedFileTarget': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2238,30): warning C5256: 'ABI::Windows::Storage::Provider::CachedFileTarget': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2203,30): warning C5256: 'ABI::Windows::Storage::Provider::FileUpdateStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2248,30): warning C5256: 'ABI::Windows::Storage::Provider::FileUpdateStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2213,30): warning C5256: 'ABI::Windows::Storage::Provider::ReadActivationMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2258,30): warning C5256: 'ABI::Windows::Storage::Provider::ReadActivationMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2223,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHardlinkPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2268,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHardlinkPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2233,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHydrationPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2278,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHydrationPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2243,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHydrationPolicyModifier': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2288,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderHydrationPolicyModifier': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2253,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderInSyncPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2298,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderInSyncPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2263,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderKnownFolderSyncStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2308,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderKnownFolderSyncStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2273,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderPopulationPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2318,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderPopulationPolicy': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2283,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderProtectionMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2328,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderProtectionMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2293,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderResultKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2338,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderResultKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2303,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderResultUsageKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2348,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderResultUsageKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2313,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderSearchMatchKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2358,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderSearchMatchKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2323,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderSearchQueryStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2368,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderSearchQueryStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2333,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2378,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2343,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderUICommandState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2388,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderUICommandState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2353,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderUriSourceStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2398,30): warning C5256: 'ABI::Windows::Storage::Provider::StorageProviderUriSourceStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2363,30): warning C5256: 'ABI::Windows::Storage::Provider::UIStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2408,30): warning C5256: 'ABI::Windows::Storage::Provider::UIStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2373,30): warning C5256: 'ABI::Windows::Storage::Provider::WriteActivationMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.Provider.h(2418,30): warning C5256: 'ABI::Windows::Storage::Provider::WriteActivationMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Storage.h(2103,26): warning C5256: 'ABI::Windows::Storage::KnownFoldersAccessStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
@@ -689,25 +689,31 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Securi
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Cryptography.Core.h(907,34): warning C5256: 'ABI::Windows::Security::Cryptography::Core::CryptographicPublicKeyBlobType': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1068,30): warning C5256: 'ABI::Windows::Foundation::Collections::CollectionChange': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1144,30): warning C5256: 'ABI::Windows::Foundation::Collections::CollectionChange': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1128,34): warning C5256: 'ABI::Windows::Security::Cryptography::Core::CryptographicPublicKeyBlobType': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1212,34): warning C5256: 'ABI::Windows::Security::Cryptography::Core::CryptographicPublicKeyBlobType': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1175,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialAttestationStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1267,30): warning C5256: 'ABI::Windows::Security::Credentials::ChallengeResponseKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1185,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialCreationOption': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1277,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialAttestationStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1195,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1287,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialCacheOption': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1205,30): warning C5256: 'ABI::Windows::Security::Credentials::WebAccountPictureSize': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1297,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialCreationOption': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1215,30): warning C5256: 'ABI::Windows::Security::Credentials::WebAccountState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1307,30): warning C5256: 'ABI::Windows::Security::Credentials::KeyCredentialStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+  (compiling source file 'AudioEngine.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1317,30): warning C5256: 'ABI::Windows::Security::Credentials::WebAccountPictureSize': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+  (compiling source file 'AudioEngine.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.Credentials.h(1327,30): warning C5256: 'ABI::Windows::Security::Credentials::WebAccountState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.System.RemoteSystems.h(1261,30): warning C5256: 'ABI::Windows::System::RemoteSystems::RemoteSystemAccessStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
@@ -1070,19 +1076,19 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Securi
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Security.EnterpriseData.h(1619,30): warning C5256: 'ABI::Windows::Security::EnterpriseData::ProtectionPolicyRequestAccessBehavior': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(1451,30): warning C5256: 'ABI::Windows::Security::EnterpriseData::ProtectionPolicyEvaluationResult': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(1571,30): warning C5256: 'ABI::Windows::Security::EnterpriseData::ProtectionPolicyEvaluationResult': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2494,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::ClipboardHistoryItemsResultStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2799,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::ClipboardHistoryItemsResultStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2504,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::DataPackageOperation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2809,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::DataPackageOperation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2514,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::SetHistoryItemAsContentStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2819,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::SetHistoryItemAsContentStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2524,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::ShareUITheme': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.DataTransfer.h(2829,30): warning C5256: 'ABI::Windows::ApplicationModel::DataTransfer::ShareUITheme': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.ApplicationModel.Email.h(1465,30): warning C5256: 'ABI::Windows::ApplicationModel::Email::EmailMailboxDeleteFolderStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
@@ -2063,103 +2069,103 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Networ
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Networking.BackgroundTransfer.h(2160,30): warning C5256: 'ABI::Windows::Networking::BackgroundTransfer::BackgroundTransferStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(2215,30): warning C5256: 'ABI::Windows::Graphics::Imaging::BitmapPixelFormat': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(2230,30): warning C5256: 'ABI::Windows::Graphics::Imaging::BitmapPixelFormat': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5271,30): warning C5256: 'ABI::Windows::Media::Core::AudioDecoderDegradation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5286,30): warning C5256: 'ABI::Windows::Media::Core::AudioDecoderDegradation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5281,30): warning C5256: 'ABI::Windows::Media::Core::AudioDecoderDegradationReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5296,30): warning C5256: 'ABI::Windows::Media::Core::AudioDecoderDegradationReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5291,30): warning C5256: 'ABI::Windows::Media::Core::CodecCategory': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5306,30): warning C5256: 'ABI::Windows::Media::Core::CodecCategory': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5301,30): warning C5256: 'ABI::Windows::Media::Core::CodecKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5316,30): warning C5256: 'ABI::Windows::Media::Core::CodecKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5311,30): warning C5256: 'ABI::Windows::Media::Core::FaceDetectionMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5326,30): warning C5256: 'ABI::Windows::Media::Core::FaceDetectionMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5321,30): warning C5256: 'ABI::Windows::Media::Core::MediaDecoderStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5336,30): warning C5256: 'ABI::Windows::Media::Core::MediaDecoderStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5331,30): warning C5256: 'ABI::Windows::Media::Core::MediaSourceState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5346,30): warning C5256: 'ABI::Windows::Media::Core::MediaSourceState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5341,30): warning C5256: 'ABI::Windows::Media::Core::MediaSourceStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5356,30): warning C5256: 'ABI::Windows::Media::Core::MediaSourceStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5351,30): warning C5256: 'ABI::Windows::Media::Core::MediaStreamSourceClosedReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5366,30): warning C5256: 'ABI::Windows::Media::Core::MediaStreamSourceClosedReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5361,30): warning C5256: 'ABI::Windows::Media::Core::MediaStreamSourceErrorStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5376,30): warning C5256: 'ABI::Windows::Media::Core::MediaStreamSourceErrorStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5371,30): warning C5256: 'ABI::Windows::Media::Core::MediaTrackKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5386,30): warning C5256: 'ABI::Windows::Media::Core::MediaTrackKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5381,30): warning C5256: 'ABI::Windows::Media::Core::MseAppendMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5396,30): warning C5256: 'ABI::Windows::Media::Core::MseAppendMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5391,30): warning C5256: 'ABI::Windows::Media::Core::MseEndOfStreamStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5406,30): warning C5256: 'ABI::Windows::Media::Core::MseEndOfStreamStatus': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5401,30): warning C5256: 'ABI::Windows::Media::Core::MseReadyState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5416,30): warning C5256: 'ABI::Windows::Media::Core::MseReadyState': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5411,30): warning C5256: 'ABI::Windows::Media::Core::SceneAnalysisRecommendation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5426,30): warning C5256: 'ABI::Windows::Media::Core::SceneAnalysisRecommendation': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5421,30): warning C5256: 'ABI::Windows::Media::Core::TimedMetadataKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5436,30): warning C5256: 'ABI::Windows::Media::Core::TimedMetadataKind': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5431,30): warning C5256: 'ABI::Windows::Media::Core::TimedMetadataTrackErrorCode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5446,30): warning C5256: 'ABI::Windows::Media::Core::TimedMetadataTrackErrorCode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5441,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextBoutenPosition': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5456,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextBoutenPosition': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5451,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextBoutenType': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5466,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextBoutenType': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5461,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextDisplayAlignment': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5476,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextDisplayAlignment': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5471,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextFlowDirection': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5486,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextFlowDirection': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5481,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextFontStyle': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5496,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextFontStyle': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5491,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextLineAlignment': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5506,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextLineAlignment': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5501,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyAlign': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5516,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyAlign': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5511,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyPosition': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5526,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyPosition': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5521,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyReserve': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5536,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextRubyReserve': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5531,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextScrollMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5546,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextScrollMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5541,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextUnit': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5556,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextUnit': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5551,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWeight': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5566,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWeight': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5561,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWrapping': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5576,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWrapping': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5571,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWritingMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5586,30): warning C5256: 'ABI::Windows::Media::Core::TimedTextWritingMode': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5581,30): warning C5256: 'ABI::Windows::Media::Core::VideoStabilizationEffectEnabledChangedReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.Core.h(5596,30): warning C5256: 'ABI::Windows::Media::Core::VideoStabilizationEffectEnabledChangedReason': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
   (compiling source file 'AudioEngine.cpp')
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\winrt\Windows.Media.MediaProperties.h(1398,30): warning C5256: 'ABI::Windows::Media::MediaProperties::AudioEncodingQuality': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration
