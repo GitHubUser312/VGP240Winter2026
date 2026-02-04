@@ -10,7 +10,7 @@ PrimitivesManager* PrimitivesManager::Get()
 
 PrimitivesManager::PrimitivesManager()
 {
-
+	
 }
 
 bool PrimitivesManager::BeginDraw(Topology topology)
