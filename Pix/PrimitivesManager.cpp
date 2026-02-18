@@ -21,6 +21,38 @@ namespace
 			hw, hh, 0.0f, 1.0f
 		};
 	}
+
+	Vector3 CreateFaceNormal(const std::vector<Vertex>& triangles)
+	{
+		// to creat a face normal
+		// we take the clockwise direction and do a cross product
+		// so 0-1(a-b), 0-2(a-c) for the directions
+		// cross product
+		// return normal
+		Vector3 abDir = triangles[1].pos - triangles[0].pos;
+		Vector3 acDir = triangles[2].pos - triangles[0].pos;
+		Vector3 faceNormal = MathHelper::Normalize(MathHelper::Cross(abDir, acDir));
+		return faceNormal;
+	}
+
+	bool CullTriangle(CullMode mode, const std::vector<Vertex>& triangleInNDC)
+	{
+		if (mode == CullMode::None)
+		{
+			return false;
+		}
+		Vector3 faceNormal = CreateFaceNormal(triangleInNDC);
+		if (mode == CullMode::Back)
+		{
+			return faceNormal.z > 0.0f;
+		}
+		if (mode == CullMode::Front)
+		{
+			return faceNormal.z < 0.0f;
+		}
+
+		return false;
+	}
 }
 
 PrimitivesManager* PrimitivesManager::Get()
@@ -32,6 +64,15 @@ PrimitivesManager* PrimitivesManager::Get()
 PrimitivesManager::PrimitivesManager()
 {
 	// chagne
+}
+
+void PrimitivesManager::OnNewFrame()
+{
+	mCullMode = CullMode::Back;
+}
+void PrimitivesManager::SetCullMode(CullMode mode)
+{
+	mCullMode = mode;
 }
 
 bool PrimitivesManager::BeginDraw(Topology topology, bool applyTransform)
@@ -69,7 +110,8 @@ bool PrimitivesManager::EndDraw()
 	Matrix4 matProj = Camera::Get()->GetProjectionMatrix();
 	// matrix transforms the NDC space vertices to screen space vertices
 	Matrix4 matScreen = GetScreenTransform();
-	Matrix4 matFinal = matWorld * matView * matProj * matScreen;
+	// get the calculation to NDC space
+	Matrix4 matNDC = matWorld * matView * matProj;
 
 	Rasterizer* rasterizer = Rasterizer::Get();
 
@@ -105,9 +147,25 @@ bool PrimitivesManager::EndDraw()
 				std::vector<Vertex> triangle = {mVertexBuffer[i - 2], mVertexBuffer[i - 1], mVertexBuffer[i]};
 				if (mApplyTransform)
 				{
+					// convert triangle positions to NDC space
+					for (uint32_t v = 0; v  < triangle.size(); v ++)
+					{
+						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matScreen);
+						// Flatten only on screen space
+						MathHelper::FlattenVectorScreenCoord(triangle[v].pos);
+					}
+
+					// while in NDC space, we can see if the face is facing the camera or away
+					if (CullTriangle(mCullMode, triangle))
+					{
+						continue;
+					}
+					
+					// convert ndc space triangles to Screen space
 					for (uint32_t v = 0; v < triangle.size(); v++)
 					{
-						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matFinal);
+						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matScreen);
+						// Flatten only on screen space and only pixel x, y values
 						MathHelper::FlattenVectorScreenCoord(triangle[v].pos);
 					}
 				}

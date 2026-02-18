@@ -29,7 +29,6 @@ float MathHelper::Magnitude(const Vector3& v)
 {
 	return sqrt(MagnitudeSquared(v));
 }
-
 Vector2 MathHelper::Normalize(const Vector2& v)
 {
 	return v / Magnitude(v);

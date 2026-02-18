@@ -1,32 +1,32 @@
 #pragma once
-
+#include <memory>
 #include <string>
 #include <vector>
+
+struct Variable;
 
 class VariableCache
 {
 public:
-	static VariableCache* Get();
+    static VariableCache* Get();
 
 public:
-	void Clear();
+    void Clear();
 
-	bool IsVarName(const std::string& name) const;
+    bool IsVarName(const std::string& name) const;
 
-	void AddFloat(const std::string& name, float value, float speed = 0.01f, float min = -FLT_MAX, float max = FLT_MAX);
-	float GetFloat(const std::string& param);
+    void AddFloat(const std::string& name, float value, float speed = 0.01f, float min = -FLT_MAX, float max = FLT_MAX);
+    float GetFloat(const std::string& param);
 
-	void ShowEditor();
+    void AddInt(const std::string& name, int value, float speed = 1.0f, int min = -INT_MAX, int max = INT_MAX);
+    int GetInt(const std::string& params);
+
+    void AddBool(const std::string& name, bool value);
+    bool GetBool(const std::string& param);
+
+    void ShowEditor();
 
 private:
-	struct FloatVar
-	{
-		std::string name;
-		float value;
-		float speed;
-		float min;
-		float max;
-	};
 
-	std::vector<FloatVar> mFloatVars;
+    std::vector<std::unique_ptr<Variable>> mVariables;
 };

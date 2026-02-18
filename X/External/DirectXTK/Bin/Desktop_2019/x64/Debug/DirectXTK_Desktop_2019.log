@@ -711,7 +711,7 @@
   EnvironmentMapEffect.cpp
   GamePad.cpp
   GeometricPrimitive.cpp
-C:\Users\ararn\Source\Repos\VGP240Winter2026\X\External\DirectXTK\Src\GamePad.cpp(22,21): warning C5264: '`anonymous-namespace'::c_XboxOneThumbDeadZone': 'const' variable is not used
+C:\Users\ararn\source\repos\VGP240Winter2026\X\External\DirectXTK\Src\GamePad.cpp(22,21): warning C5264: '`anonymous-namespace'::c_XboxOneThumbDeadZone': 'const' variable is not used
   (compiling source file '/Src/GamePad.cpp')
   
   Geometry.cpp
@@ -737,4 +737,4 @@ C:\Users\ararn\Source\Repos\VGP240Winter2026\X\External\DirectXTK\Src\GamePad.cp
   VertexTypes.cpp
   WICTextureLoader.cpp
   Generating Code...
-  DirectXTK_Desktop_2019.vcxproj -> C:\Users\ararn\Source\Repos\VGP240Winter2026\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+  DirectXTK_Desktop_2019.vcxproj -> C:\Users\ararn\source\repos\VGP240Winter2026\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib

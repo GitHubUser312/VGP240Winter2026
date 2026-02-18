@@ -10,6 +10,9 @@
 #include "CmdVertex.h"
 #include "CmdSetViewport.h"
 #include "CmdMatrixStack.h"
+#include "CmdSetCullMode.h"
+#include "CmdEnableDepthBuffer.h"
+
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -32,11 +35,13 @@ CommandDictionary::CommandDictionary()
 	// Rasterization commands
 	RegisterCommand<CmdDrawPixel>();
 	RegisterCommand<CmdSetColor>();
+	RegisterCommand<CmdEnableDepthBuffer>();
 
 	// Primitives commands
 	RegisterCommand<CmdBeginDraw>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdVertex>();
+	RegisterCommand<CmdSetCullMode>();
 
 	// Matrix Stack commands (makes object world transformations easier to manage)
 	RegisterCommand<CmdPushTranslation>();
