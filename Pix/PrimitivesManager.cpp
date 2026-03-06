@@ -70,10 +70,15 @@ PrimitivesManager::PrimitivesManager()
 void PrimitivesManager::OnNewFrame()
 {
 	mCullMode = CullMode::Back;
+	mCorrectUV = false;
 }
 void PrimitivesManager::SetCullMode(CullMode mode)
 {
 	mCullMode = mode;
+}
+void PrimitivesManager::SetCorrectUV(bool mode)
+{
+	mCorrectUV = mode;
 }
 
 bool PrimitivesManager::BeginDraw(Topology topology, bool applyTransform)
@@ -170,24 +175,43 @@ bool PrimitivesManager::EndDraw()
 						// Transform normal to world
 						triangle[v].norms = MathHelper::Normalize(MathHelper::TransformNormal(triangle[v].norms, matWorld));
 					}
-					// Flat shading is vertex based
-					if (shadeMode == ShadeMode::Flat)
-					{
-						triangle[0].color *= lm->ComputeLightColor(triangle[0].pos, triangle[0].norms);
-						triangle[1].color = triangle[0].color;
-						triangle[2].color = triangle[0].color;
-					}
 
-					else if (shadeMode == ShadeMode::Gouraud)
+					// if color.z >= 0, then it is a colored shape, otherwise its a texture
+					if (triangle[0].color.z >= 0.0f)
 					{
-					
-						// apply lighting in world space (Gouraud Shading)
-						for (uint32_t v = 0; v < triangle.size(); v++)
+						// Flat shading is vertex based
+						if (shadeMode == ShadeMode::Flat)
 						{
-							triangle[v].color *= lm->ComputeLightColor(triangle[v].pos, triangle[v].norms);
+							triangle[0].color *= lm->ComputeLightColor(triangle[0].pos, triangle[0].norms);
+							triangle[1].color = triangle[0].color;
+							triangle[2].color = triangle[0].color;
 						}
 
+						else if (shadeMode == ShadeMode::Gouraud)
+						{
+					
+							// apply lighting in world space (Gouraud Shading)
+							for (uint32_t v = 0; v < triangle.size(); v++)
+							{
+								triangle[v].color *= lm->ComputeLightColor(triangle[v].pos, triangle[v].norms);
+							}
+
+						}
 					}
+					else if (mCorrectUV)
+					{
+						// apply the corrective uv in view space
+						// at this point, we are in world space, so next step is
+						// multiply by matView
+						for (uint32_t v = 0; v < triangle.size(); ++v)
+						{
+							Vector3 viewSpacePos = MathHelper::TransformCoord(triangle[v].posWorld, matView);
+							triangle[v].color.x /= viewSpacePos.z;
+							triangle[v].color.y /= viewSpacePos.z;
+							triangle[v].color.w = 1.0f / viewSpacePos.z;
+						}
+					}
+
 					// otherwise, convert the localspace normal to world space
 
 

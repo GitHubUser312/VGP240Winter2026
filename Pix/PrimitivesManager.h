@@ -22,6 +22,7 @@ class PrimitivesManager
 
 		void OnNewFrame();
 		void SetCullMode(CullMode mode);
+		void SetCorrectUV(bool correctUV);
 
 		// Start accepting vertices
 		bool BeginDraw(Topology topology, bool applyTransform = false);
@@ -39,6 +40,7 @@ class PrimitivesManager
 		CullMode mCullMode = CullMode::None;
 		bool mDrawBegin = false;
 		bool mApplyTransform = false;
+		bool mCorrectUV = false;
 
 		void Clear();
 		void DrawPrimitives(Topology topology, const Vertex* vertices, size_t vertexCount);

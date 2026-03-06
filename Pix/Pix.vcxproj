@@ -181,10 +181,13 @@
     <ClCompile Include="CmdLights.cpp" />
     <ClCompile Include="CmdMatrixStack.cpp" />
     <ClCompile Include="CmdModel.cpp" />
+    <ClCompile Include="CmdSetAddressMode.cpp" />
     <ClCompile Include="CmdSetColor.cpp" />
+    <ClCompile Include="CmdSetCorrectUV.cpp" />
     <ClCompile Include="CmdSetCullMode.cpp" />
     <ClCompile Include="CmdSetResolution.cpp" />
     <ClCompile Include="CmdSetShadeMode.cpp" />
+    <ClCompile Include="CmdSetTexture.cpp" />
     <ClCompile Include="CmdSetViewport.cpp" />
     <ClCompile Include="CmdVarBool.cpp" />
     <ClCompile Include="CmdVarFloat.cpp" />
@@ -226,7 +229,10 @@
     <ClInclude Include="CmdEndDraw.h" />
     <ClInclude Include="CmdLights.h" />
     <ClInclude Include="CmdModel.h" />
+    <ClInclude Include="CmdSetAddressMode.h" />
+    <ClInclude Include="CmdSetCorrectUV.h" />
     <ClInclude Include="CmdSetShadeMode.h" />
+    <ClInclude Include="CmdSetTexture.h" />
     <ClInclude Include="CmdVarBool.h" />
     <ClInclude Include="CmdVarInt.h" />
     <ClInclude Include="CmdMatrixStack.h" />

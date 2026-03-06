@@ -29,7 +29,10 @@ void TextureManager::SetTexture(const std::string& fileName)
 			mCurrentTexture = texture.get();
 		}
 }
-
+void TextureManager::SetAddressMode(AddressMode addressMode)
+{
+	mAddressMode = addressMode;
+}
 X::Color TextureManager::SampleColor(const X::Color& uv) const
 {
 	X::Color color = uv;
@@ -37,7 +40,7 @@ X::Color TextureManager::SampleColor(const X::Color& uv) const
 	{
 		float u = uv.x / uv.w;
 		float v = uv.y / uv.w;
-		color = mCurrentTexture->GetPixel(u, v);
+		color = mCurrentTexture->GetPixel(u, v, mAddressMode);
 	}
 	return color;
 }

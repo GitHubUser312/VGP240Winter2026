@@ -42,7 +42,7 @@ void Texture::Load(const std::string& fileName)
 {
     mFileName = fileName;
     FILE* file = nullptr;
-    fopen_s(&file, fileName.c_str(), "rn");
+    fopen_s(&file, fileName.c_str(), "rb");
     if (file == nullptr)
     {
         char buffer[128];
@@ -56,7 +56,7 @@ void Texture::Load(const std::string& fileName)
     fread(&fileHeader, sizeof(fileHeader), 1, file);
     fread(&infoHeader, sizeof(infoHeader), 1, file);
 
-    if (infoHeader.bits != 20)
+    if (infoHeader.bits != 24)
     {
         fclose(file);
         MessageBoxA(nullptr, "File Not 24 bit aligned!", "Texture Error!", MB_OK | MB_ICONEXCLAMATION);
@@ -80,8 +80,8 @@ void Texture::Load(const std::string& fileName)
             uint8_t g = 0;
             uint8_t b = 0;
             fread(&b, sizeof(uint8_t), 1, file);
+            fread(&g, sizeof(uint8_t), 1, file);
             fread(&r, sizeof(uint8_t), 1, file);
-            fread(&b, sizeof(uint8_t), 1, file);
             uint32_t index = w + ((mHeight - h - 1) * mWidth);
             mPixels[index] = { r / 255.0f, g / 255.0f, b / 255.0f, 1.0f };
         }
@@ -96,10 +96,69 @@ const std::string& Texture::GetFileName() const
 }
 
 // pases in a value from 0-1 for u and v coordinates
-X::Color Texture::GetPixel(float u, float v) const
+X::Color Texture::GetPixel(float u, float v, AddressMode addressMode) const
 {
+    switch (addressMode)
+    {
+        case AddressMode::Border:
+            if (u < 0.0f || u > 1.0f || v < 0.0f || v > 1.0f)
+            {
+                return X::Colors::HotPink;
+            }
+            break;
+        case AddressMode::Clamp:
+
+            // use last color outside of 0-1
+            u = std::clamp(u, 0.0f, 1.0f);
+            v = std::clamp(v, 0.0f, 1.0f);
+            break;
+        case AddressMode::Wrap:
+
+            // reduce value if more than 1, increase if less than 0 to keep between 0-1
+            while (u > 1.0f)
+            {
+                u -= 1.0f;
+            }
+            while (u < 0.0f)
+            {
+                u += 1.0f;
+            }
+            while (v < 0.0f)
+            {
+                v += 1.0f;
+            }
+            while (v < 0.0f)
+            {
+                v += 1.0f;
+            }
+            break;
+        case AddressMode::Mirror:
+
+            // reduce/increase if touside of 0-2, then if over 1, flip by 2 - value
+            while (u > 2.0f)
+            {
+                u -= 2.0f;
+            }
+            while (u < 0.0f)
+            {
+                u += 2.0f;
+            }
+            u = (u > 1.0f) ? 2.0f - u : u;
+            while (v > 2.0f)
+            {
+                v -= 2.0f;
+            }
+            while (v < 0.0f)
+            {
+                v += 2.0f;
+            }
+            v = (v > 1.0f) ? 2.0f - v : v;
+            break;
+        default:
+            break;
+    }
     int uIndex = static_cast<int>(u * (mWidth - 1));
-    int vIndex = static_cast<int>(u * (mHeight - 1));
+    int vIndex = static_cast<int>(v * (mHeight - 1));
     return GetPixel(uIndex, vIndex);
 }
 
@@ -107,7 +166,7 @@ X::Color Texture::GetPixel(float u, float v) const
 X::Color Texture::GetPixel(int u, int v) const
 {
 	u = std::clamp(u, 0, mWidth - 1);
-	v = std::clamp(u, 0, mHeight - 1);
+	v = std::clamp(v, 0, mHeight - 1);
 	return mPixels[u + (v * mWidth)];
 }
 

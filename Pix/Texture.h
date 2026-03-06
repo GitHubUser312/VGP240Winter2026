@@ -16,7 +16,7 @@ class Texture
 		void Load(const std::string& fileName);
 		const std::string& GetFileName() const;
 
-		X::Color GetPixel(float u, float v) const;
+		X::Color GetPixel(float u, float v, AddressMode addressMode) const;
 		X::Color GetPixel(int u, int v) const;
 
 		int GetWidth() const;
