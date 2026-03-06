@@ -76,3 +76,12 @@ Matrix4 Camera::GetProjectionMatrix() const
 		0.0f,  0.0f,  -q * zn, 0.0f
 	};
 }
+
+const Vector3& Camera::GetDirection() const
+{
+	return mDirection;
+}
+const Vector3& Camera::GetPosition() const
+{
+	return mPosition;
+}

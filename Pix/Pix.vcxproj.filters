@@ -103,7 +103,7 @@
       <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="MathHelper.cpp">
-      <Filter>Math</Filter>
+      <Filter>Graphics\Math</Filter>
     </ClCompile>
     <ClCompile Include="PrimitivesManager.cpp">
       <Filter>Graphics</Filter>
@@ -150,6 +150,36 @@
     <ClCompile Include="CmdVarBool.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightTypes.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLights.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetShadeMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdModel.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextEditor.h">
@@ -192,13 +222,13 @@
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Vector2.h">
-      <Filter>Math</Filter>
+      <Filter>Graphics\Math</Filter>
     </ClInclude>
     <ClInclude Include="Vector3.h">
-      <Filter>Math</Filter>
+      <Filter>Graphics\Math</Filter>
     </ClInclude>
     <ClInclude Include="MathHelper.h">
-      <Filter>Math</Filter>
+      <Filter>Graphics\Math</Filter>
     </ClInclude>
     <ClInclude Include="Vertex.h">
       <Filter>Graphics</Filter>
@@ -225,7 +255,7 @@
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Matrix4.h">
-      <Filter>Math</Filter>
+      <Filter>Graphics\Math</Filter>
     </ClInclude>
     <ClInclude Include="MatrixStack.h">
       <Filter>Graphics</Filter>
@@ -254,6 +284,39 @@
     <ClInclude Include="CmdVarBool.h">
       <Filter>Commands</Filter>
     </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightTypes.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLights.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetShadeMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdModel.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Editor">
@@ -268,7 +331,7 @@
     <Filter Include="Scripts">
       <UniqueIdentifier>{f4ee6086-a9c7-41f0-9695-19708a6954c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Math">
+    <Filter Include="Graphics\Math">
       <UniqueIdentifier>{c72c3c6e-59a2-48b5-9a2f-2d8c2268e802}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

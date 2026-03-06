@@ -12,7 +12,10 @@
 #include "CmdMatrixStack.h"
 #include "CmdSetCullMode.h"
 #include "CmdEnableDepthBuffer.h"
-
+#include "CmdLights.h"
+#include "CmdSetShadeMode.h"
+#include "CmdModel.h"
+#include "CmdCamera.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -27,7 +30,11 @@ CommandDictionary::CommandDictionary()
 	// Setting commands
 	RegisterCommand<CmdSetResolution>();
 	RegisterCommand<CmdSetViewport>();
-
+	RegisterCommand<CmdSetCameraPosition>();
+	RegisterCommand<CmdSetCameraNearPlane>();
+	RegisterCommand<CmdSetCameraFarPlane>();
+	RegisterCommand<CmdSetCameraFOV>();
+	RegisterCommand<CmdSetCameraDirection>();
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
@@ -42,6 +49,8 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdSetCullMode>();
+	RegisterCommand<CmdSetShadeMode>();
+	RegisterCommand<CmdModel>();
 
 	// Matrix Stack commands (makes object world transformations easier to manage)
 	RegisterCommand<CmdPushTranslation>();
@@ -50,6 +59,14 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdPushRotationZ>();
 	RegisterCommand<CmdPushScaling>();
 	RegisterCommand<CmdPopMatrix>();
+
+	// light commands
+	RegisterCommand<CmdSetLightAmbient>();
+	RegisterCommand<CmdSetLightDiffuse>();
+	RegisterCommand<CmdSetLightSpecular>();
+	RegisterCommand<CmdAddDirectionalLight>();
+	RegisterCommand<CmdAddPointLight>();
+	RegisterCommand<CmdAddSpotLight>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()

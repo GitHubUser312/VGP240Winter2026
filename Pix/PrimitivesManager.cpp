@@ -1,8 +1,9 @@
-#include "PrimitivesManager.h"
+﻿#include "PrimitivesManager.h"
 #include "Rasterizer.h"
 #include "Clipper.h"
 #include "Camera.h"
 #include "MatrixStack.h"
+#include "LightManager.h"
 
 extern float gResolutionX;
 extern float gResolutionY;
@@ -111,10 +112,12 @@ bool PrimitivesManager::EndDraw()
 	// matrix transforms the NDC space vertices to screen space vertices
 	Matrix4 matScreen = GetScreenTransform();
 	// get the calculation to NDC space
-	Matrix4 matNDC = matWorld * matView * matProj;
+	Matrix4 matNDC = matView * matProj;
 
 	Rasterizer* rasterizer = Rasterizer::Get();
+	LightManager* lm = LightManager::Get();
 
+	ShadeMode shadeMode = rasterizer->GetShadeMode();
 	switch (mTopology)
 	{
 		case Topology::Point:
@@ -147,12 +150,51 @@ bool PrimitivesManager::EndDraw()
 				std::vector<Vertex> triangle = {mVertexBuffer[i - 2], mVertexBuffer[i - 1], mVertexBuffer[i]};
 				if (mApplyTransform)
 				{
+					// calculate the normal in local space
+					if (MathHelper::CheckEqual(MathHelper::MagnitudeSquared(triangle[0].norms), 0.0f))
+					{
+						Vector3 faceNormal = CreateFaceNormal(triangle);
+						for (uint32_t v = 0; v < triangle.size(); v++)
+						{
+							triangle[v].norms = faceNormal;
+						}
+					}
+
+					// convert triangle position to world space
+					for (uint32_t v = 0; v < triangle.size(); v++)
+					{
+						// Local → World
+						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matWorld);
+						triangle[v].posWorld = triangle[v].pos;
+
+						// Transform normal to world
+						triangle[v].norms = MathHelper::Normalize(MathHelper::TransformNormal(triangle[v].norms, matWorld));
+					}
+					// Flat shading is vertex based
+					if (shadeMode == ShadeMode::Flat)
+					{
+						triangle[0].color *= lm->ComputeLightColor(triangle[0].pos, triangle[0].norms);
+						triangle[1].color = triangle[0].color;
+						triangle[2].color = triangle[0].color;
+					}
+
+					else if (shadeMode == ShadeMode::Gouraud)
+					{
+					
+						// apply lighting in world space (Gouraud Shading)
+						for (uint32_t v = 0; v < triangle.size(); v++)
+						{
+							triangle[v].color *= lm->ComputeLightColor(triangle[v].pos, triangle[v].norms);
+						}
+
+					}
+					// otherwise, convert the localspace normal to world space
+
+
 					// convert triangle positions to NDC space
 					for (uint32_t v = 0; v  < triangle.size(); v ++)
 					{
-						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matScreen);
-						// Flatten only on screen space
-						MathHelper::FlattenVectorScreenCoord(triangle[v].pos);
+						triangle[v].pos = MathHelper::TransformCoord(triangle[v].pos, matNDC);
 					}
 
 					// while in NDC space, we can see if the face is facing the camera or away

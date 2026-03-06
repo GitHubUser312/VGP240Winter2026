@@ -16,6 +16,9 @@ class Camera
 		Matrix4 GetViewMatrix() const;
 		Matrix4 GetProjectionMatrix() const;
 
+		const Vector3& GetDirection() const;
+		const Vector3& GetPosition() const;
+
 	private:
 
 		Vector3 mPosition;

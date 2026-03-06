@@ -24,7 +24,7 @@ bool CmdPushRotationX::Execute(const std::vector<std::string>& params)
 	}
 	VariableCache* vc = VariableCache::Get();
 	const float degrees = vc->GetFloat(params[0]);
-	MatrixStack::Get()->PushRotationY(degrees * MathHelper::DegToRad);
+	MatrixStack::Get()->PushRotationX(degrees * MathHelper::DegToRad);
 	return true;
 }
 
