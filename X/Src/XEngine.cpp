@@ -1,3 +1,6 @@
+#include "RenderTarget.h"
+#include "RenderTarget.h"
+#include "RenderTarget.h"
 //====================================================================================================
 // Filename:	XEngine.cpp
 // Created by:	Peter Chan
@@ -506,6 +509,7 @@ void X::DrawSphere(float x, float y, float z, float radius, const Color& color, 
 	XASSERT(initialized, "[XEngine] Engine not started.");
 	SimpleDraw::AddSphere(Math::Vector3(x, y, z), radius, color, slices, rings);
 }
+
 
 void X::DrawPixel(int x, int y, const Color& color)
 {

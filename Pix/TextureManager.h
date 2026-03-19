@@ -10,6 +10,7 @@ class TextureManager
 		void Clear();
 		void SetTexture(const std::string& fileName);
 		void SetAddressMode(AddressMode addressMode);
+		void SetUseFilter(bool useFilter);
 
 		X::Color SampleColor(const X::Color& uv) const;
 	private:
@@ -17,4 +18,5 @@ class TextureManager
 		const Texture* mCurrentTexture = nullptr;
 
 		AddressMode mAddressMode = AddressMode::Clamp;
+		bool mUseFilter = false;
 };

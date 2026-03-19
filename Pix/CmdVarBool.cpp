@@ -9,7 +9,7 @@ bool CmdVarBool::Execute(const std::vector<std::string>& params)
 	}
 
 	VariableCache* vc = VariableCache::Get();
-	if (vc->IsVarName(params[0]) || params[1] != "=")
+	if (!vc->IsVarName(params[0]) || params[1] != "=")
 	{
 		return false;
 	}

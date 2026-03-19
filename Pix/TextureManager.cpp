@@ -33,6 +33,10 @@ void TextureManager::SetAddressMode(AddressMode addressMode)
 {
 	mAddressMode = addressMode;
 }
+void TextureManager::SetUseFilter(bool useFilter)
+{
+	mUseFilter = useFilter;
+}
 X::Color TextureManager::SampleColor(const X::Color& uv) const
 {
 	X::Color color = uv;
@@ -40,7 +44,7 @@ X::Color TextureManager::SampleColor(const X::Color& uv) const
 	{
 		float u = uv.x / uv.w;
 		float v = uv.y / uv.w;
-		color = mCurrentTexture->GetPixel(u, v, mAddressMode);
+		color = mCurrentTexture->GetPixel(u, v, mAddressMode, mUseFilter);
 	}
 	return color;
 }

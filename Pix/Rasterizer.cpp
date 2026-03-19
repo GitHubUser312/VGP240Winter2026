@@ -71,7 +71,6 @@ void Rasterizer::DrawPoint(const Vertex& vertex)
 		{
 			mColor *= LightManager::Get()->ComputeLightColor(vertex.posWorld, vertex.norms);
 		}
-		X::DrawPixel(x, y, mColor);
 	}
 }
 

@@ -36,6 +36,38 @@ namespace
             return newStride;
         }
     #pragma pack(pop)
+        X::Color GetBilinearFilterPixelColor(const Texture& tex, float u, float v)
+        {
+            // step 1, convert u, v coordinates to texel coordinates
+            float uTex = u * static_cast<float>(tex.GetWidth());
+            float vTex = v * static_cast<float>(tex.GetHeight());
+
+            // step 2, convert the floats to ints to get the pixel indices
+            int uTextInt = static_cast<int>(uTex);
+            int vTextInt = static_cast<int>(vTex);
+
+            // example: if uTex = 128.7654, uTextInt = 128, this step gives 0.7654
+            // step 3, get the float remainder as a ratio
+            float uRatio = uTex - static_cast<float>(uTextInt);
+            float vRatio = vTex - static_cast<float>(vTextInt);
+
+            // if with above example, 0.7654 would be 0.2346
+            // step 4, get the inverse ratio
+            float uInverse = 1.0f - uRatio;
+            float vInverse = 1.0f - vRatio;
+
+            // step 5, get all neighboring pixel colors
+            //[a][b]
+            //[c][d]
+            X::Color a = tex.GetPixel(uTextInt, vTextInt) * vInverse;
+            X::Color b = tex.GetPixel(uTextInt + 1, vTextInt) * uRatio;
+            X::Color c = tex.GetPixel(uTextInt, vTextInt + 1) * uInverse;
+            X::Color d = tex.GetPixel(uTextInt + 1, vTextInt + 1) * uRatio;
+            
+            // step 6, blend all together
+            return (a + b) * vInverse
+                + (c + d) * vRatio;
+        }
 }
 
 void Texture::Load(const std::string& fileName)
@@ -96,7 +128,7 @@ const std::string& Texture::GetFileName() const
 }
 
 // pases in a value from 0-1 for u and v coordinates
-X::Color Texture::GetPixel(float u, float v, AddressMode addressMode) const
+X::Color Texture::GetPixel(float u, float v, AddressMode addressMode, bool filter) const
 {
     switch (addressMode)
     {
@@ -153,9 +185,14 @@ X::Color Texture::GetPixel(float u, float v, AddressMode addressMode) const
                 v += 2.0f;
             }
             v = (v > 1.0f) ? 2.0f - v : v;
-            break;
+        break;
         default:
             break;
+    }
+
+    if (filter)
+    {
+        return GetBilinearFilterPixelColor(*this, u, v);
     }
     int uIndex = static_cast<int>(u * (mWidth - 1));
     int vIndex = static_cast<int>(v * (mHeight - 1));

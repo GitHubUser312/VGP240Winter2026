@@ -189,6 +189,12 @@
     <ClCompile Include="CmdSetAddressMode.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
+    <ClCompile Include="CmdSetUseFilter.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextEditor.h">
@@ -334,6 +340,12 @@
     </ClInclude>
     <ClInclude Include="CmdSetAddressMode.h">
       <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetUseFilter.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

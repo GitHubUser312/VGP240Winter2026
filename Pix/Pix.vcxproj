@@ -188,6 +188,7 @@
     <ClCompile Include="CmdSetResolution.cpp" />
     <ClCompile Include="CmdSetShadeMode.cpp" />
     <ClCompile Include="CmdSetTexture.cpp" />
+    <ClCompile Include="CmdSetUseFilter.cpp" />
     <ClCompile Include="CmdSetViewport.cpp" />
     <ClCompile Include="CmdVarBool.cpp" />
     <ClCompile Include="CmdVarFloat.cpp" />
@@ -206,6 +207,7 @@
     <ClCompile Include="PixEditor.cpp" />
     <ClCompile Include="PrimitivesManager.cpp" />
     <ClCompile Include="Rasterizer.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
     <ClCompile Include="TextEditor.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -233,6 +235,7 @@
     <ClInclude Include="CmdSetCorrectUV.h" />
     <ClInclude Include="CmdSetShadeMode.h" />
     <ClInclude Include="CmdSetTexture.h" />
+    <ClInclude Include="CmdSetUseFilter.h" />
     <ClInclude Include="CmdVarBool.h" />
     <ClInclude Include="CmdVarInt.h" />
     <ClInclude Include="CmdMatrixStack.h" />
@@ -259,6 +262,7 @@
     <ClInclude Include="PixEditor.h" />
     <ClInclude Include="PrimitivesManager.h" />
     <ClInclude Include="Rasterizer.h" />
+    <ClInclude Include="RenderTarget.h" />
     <ClInclude Include="ScriptParser.h" />
     <ClInclude Include="TextEditor.h" />
     <ClInclude Include="Texture.h" />
